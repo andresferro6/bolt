@@ -4,8 +4,9 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load data from Excel file into a DataFrame
-data_path = 'Dataset Task 1.xlsx'
+data_path = 'data.xlsx'
 df = pd.read_excel(data_path)
+df = df.astype(str)
 
 # Define an endpoint to get data
 @app.route('/get_data', methods=['GET'])

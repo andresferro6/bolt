@@ -9,43 +9,91 @@
 <body>
 
 <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-success text-center">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Test Navigation</a>
+        <a href="/"> <!-- Add the URL you want to redirect to -->
+            <img src="https://1000marcas.net/wp-content/uploads/2021/07/Bolt-Logo.png" alt="" width="50px">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="test.html">Home</a>
+                    <a class="nav-link text-black fw-bolder" href="task1.html">Task 1</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link text-black fw-bolder" href="task2.html">Task 2</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link text-black fw-bolder" href="considerations.html">Considerations</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<!-- Content Card -->
+
+<!-- Content Row with Columns -->
 <div class="container mt-5">
-    <div class="card text-center mx-auto" style="max-width: 600px;">
-        <div class="card-header">
-            Technical Test Content
+    
+    <div class="container mt-3 text-center">
+        <h1 class="display-4 fw-bolder text-success">Technical Test Overview</h1>
+        <p class="lead fw-bolder">Explore the tasks and considerations for this technical test.</p>
+    </div>
+
+    <div class="row">
+        <!-- Task 1 Column -->
+        <div class="col-md-4">
+            <div id="task1" class="card text-center mb-3" style="max-width: 100%;">
+                <div class="card-header">
+                    <img src="https://picsum.photos/200/300/?blur" alt="Task 1 Image" class="img-fluid">
+
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title fw-bolder">Task 1 Title</h5>
+                    <p class="card-text">
+                        This is the content of Task 1. Include details and instructions for completing Task 1 here.
+                    </p>
+                    <button class="btn btn-dark"> Go </button>
+
+                </div>
+            </div>
         </div>
-        <div class="card-body">
-            <h5 class="card-title">Test Title</h5>
-            <p class="card-text">
-                This is the content of the technical test. You can include questions, instructions, and any other relevant information here.
-            </p>
-            <a href="#" class="btn btn-primary">Start Test</a>
+
+        <!-- Task 2 Column -->
+        <div class="col-md-4">
+            <div id="task2" class="card text-center mb-3" style="max-width: 100%;">
+                <div class="card-header">
+                    <img src="https://picsum.photos/200/300/?blur" alt="Task 1 Image" class="img-fluid">
+
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title fw-bolder">Task 2 Title</h5>
+                    <p class="card-text">
+                        This is the content of Task 2. Provide information and instructions related to Task 2 in this section.
+                    </p>
+                    <button class="btn btn-dark "> Go </button>
+                </div>
+            </div>
         </div>
-        <div class="card-footer text-muted">
-            © 2024 Technical Test Inc.
+
+        <!-- Considerations Column -->
+        <div class="col-md-4">
+            <div id="considerations" class="card text-center" style="max-width: 100%;">
+                <div class="card-header">
+                    <img src="https://picsum.photos/200/300/?blur" alt="Task 1 Image" class="img-fluid">
+
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title fw-bolder">Considerations</h5>
+                    <p class="card-text">
+                        Include any additional considerations or important information to understand the test
+                    </p>
+                    <button class="btn btn-dark rounded-3"> Go </button>
+
+                </div>
+            </div>
         </div>
     </div>
 </div>
